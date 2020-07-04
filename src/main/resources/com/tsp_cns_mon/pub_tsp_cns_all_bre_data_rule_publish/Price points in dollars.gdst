@@ -1,0 +1,1620 @@
+<org.drools.workbench.models.guided.dtable.shared.model.GuidedDecisionTable52>
+  <tableName>Price points in dollars</tableName>
+  <rowNumberCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </rowNumberCol>
+  <descriptionCol>
+    <hideColumn>false</hideColumn>
+    <width>150</width>
+  </descriptionCol>
+  <metadataCols/>
+  <attributeCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+      <typedDefaultValue>
+        <valueNumeric class="int">0</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>130</width>
+      <attribute>salience</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+    <org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+      <typedDefaultValue>
+        <valueString>execute_rule_</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <attribute>activation-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+  </attributeCols>
+  <conditionPatterns>
+    <org.drools.workbench.models.guided.dtable.shared.model.Pattern52>
+      <factType>pub_cns_combined_flattened_bre</factType>
+      <boundName>data</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>decimal_round((((data_measures.sales*data_factor_values_4)/(data_measures.units))*100),0) &lt;=</header>
+          <constraintValueType>5</constraintValueType>
+          <factField>decimal_round</factField>
+          <fieldType>java.lang.String</fieldType>
+          <operator>&lt;=</operator>
+        </org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+        <org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>decimal_round((((data_measures.sales*data_factor_values_4)/(data_measures.units))*100),0) &gt;=</header>
+          <constraintValueType>5</constraintValueType>
+          <factField>decimal_round</factField>
+          <fieldType>java.lang.String</fieldType>
+          <operator>&gt;=</operator>
+        </org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+      </conditions>
+    </org.drools.workbench.models.guided.dtable.shared.model.Pattern52>
+  </conditionPatterns>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>ppdolls : Data_npd_attr_54</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.ActionSetField>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>data_npd_attr_54</field>
+              <value>data_npd_attr_54</value>
+              <nature>7</nature>
+              <type>Long</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <variable>data</variable>
+        </org.drools.workbench.models.datamodel.rule.ActionSetField>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>ppdolls : Data_npd_attr_54</header>
+          <varName>data_npd_attr_54</varName>
+          <fieldType>Long</fieldType>
+          <factType>data</factType>
+          <factField>data_npd_attr_54</factField>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+  </actionCols>
+  <imports>
+    <imports/>
+  </imports>
+  <packageName>com.tsp_cns_mon.pub_tsp_cns_all_bre_data_rule_publish</packageName>
+  <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
+  <data>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">0</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_1_0 - 4.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">447</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 0</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003260</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">1</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_2_5 - 9.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">446</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003261</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">2</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_3_10 - 14.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">445</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 1499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 1000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003262</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">3</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_4_15 - 19.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">444</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 1999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 1500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003263</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">4</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_5_20 - 24.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">443</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 2499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 2000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003264</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">5</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_6_25 - 29.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">442</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 2999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 2500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003265</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">6</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_7_30 - 34.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">441</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 3499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 3000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003266</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">7</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_8_35 - 39.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">440</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 3999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 3500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003267</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">8</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_9_40 - 44.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">439</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 4499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 4000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003268</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">9</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_10_45 - 49.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">438</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 4999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 4500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003269</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">10</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_11_50 - 54.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">437</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 5499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 5000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003270</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">11</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_12_55 - 59.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">436</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 5999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 5500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003271</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">12</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_13_60 - 64.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">435</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 6499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 6000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003272</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">13</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_14_65 - 69.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">434</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 6999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 6500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003273</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">14</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_15_70 - 74.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">433</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 7499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 7000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003274</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">15</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_16_75 - 79.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">432</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 7999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 7500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003275</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">16</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_17_80 - 84.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">431</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 8499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 8000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003276</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">17</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_18_85 - 89.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">430</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 8999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 8500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003277</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">18</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_19_90 - 94.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">429</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 9499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 9000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003278</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">19</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_20_95 - 99.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">428</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 9999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 9500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003279</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">20</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_21_100 -104.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">427</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 10499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 10000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003280</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">21</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_22_105 -109.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">426</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 10999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 10500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003281</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">22</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_23_110 -114.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">425</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 11499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 11000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003282</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">23</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_24_115 -119.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">424</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 11999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 11500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003283</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">24</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_25_120 -124.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">423</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 12499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 12000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003284</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">25</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_26_125 -129.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">422</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 12999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 12500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003285</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">26</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_27_130 -134.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">421</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 13499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 13000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003286</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">27</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_28_135 -139.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">420</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 13999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 13500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003287</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">28</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_29_140 -144.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">419</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 14499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 14000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003288</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">29</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_30_145 -149.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">418</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 14999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 14500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003289</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">30</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_31_150 -154.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">417</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 15499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 15000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003290</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">31</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_32_155 -159.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">416</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 15999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 15500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003291</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">32</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_33_160 -164.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">415</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 16499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 16000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003292</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">33</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_34_165 -169.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">414</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 16999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 16500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003293</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">34</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_35_170 -174.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">413</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 17499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 17000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003294</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">35</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_36_175 -179.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">412</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 17999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 17500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003295</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">36</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_37_180 -184.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">411</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 18499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 18000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003296</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">37</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_38_185 -189.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">410</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 18999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 18500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003297</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">38</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_39_190 -194.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">409</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 19499</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 19000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003298</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">39</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_40_195 -199.99</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">408</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &lt;= 19999</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 19500</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003299</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">40</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_3_Price points in dollars_case_41_200+</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">407</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_3</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>data.decimalRound((((data.data_measures__sales*data.data_factor_values_4)/(data.data_measures__units))*100),0) &gt;= 20000</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003300</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+  </data>
+</org.drools.workbench.models.guided.dtable.shared.model.GuidedDecisionTable52>
