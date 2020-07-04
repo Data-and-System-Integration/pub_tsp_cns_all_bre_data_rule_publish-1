@@ -1,0 +1,159 @@
+<org.drools.workbench.models.guided.dtable.shared.model.GuidedDecisionTable52>
+  <tableName>Nike Playing fields</tableName>
+  <rowNumberCol>
+    <hideColumn>false</hideColumn>
+    <width>-1</width>
+  </rowNumberCol>
+  <descriptionCol>
+    <hideColumn>false</hideColumn>
+    <width>150</width>
+  </descriptionCol>
+  <metadataCols/>
+  <attributeCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+      <typedDefaultValue>
+        <valueNumeric class="int">0</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>130</width>
+      <attribute>salience</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+    <org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+      <typedDefaultValue>
+        <valueString>execute_rule_</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </typedDefaultValue>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <attribute>activation-group</attribute>
+      <reverseOrder>false</reverseOrder>
+      <useRowNumber>false</useRowNumber>
+    </org.drools.workbench.models.guided.dtable.shared.model.AttributeCol52>
+  </attributeCols>
+  <conditionPatterns>
+    <org.drools.workbench.models.guided.dtable.shared.model.Pattern52>
+      <factType>pub_cns_combined_flattened_bre</factType>
+      <boundName>data</boundName>
+      <isNegated>false</isNegated>
+      <conditions>
+        <org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>data_channel_dim__level_1 in</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>data_channel_dim__level_1</factField>
+          <fieldType>java.lang.Long</fieldType>
+          <operator>in</operator>
+        </org.drools.workbench.models.guided.dtable.shared.model.ConditionCol52>
+      </conditions>
+    </org.drools.workbench.models.guided.dtable.shared.model.Pattern52>
+  </conditionPatterns>
+  <actionCols>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>nikeplayingfield : Data_npd_attr_52</header>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.ActionSetField>
+          <fieldValues>
+            <org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+              <field>data_npd_attr_52</field>
+              <value>data_npd_attr_52</value>
+              <nature>7</nature>
+              <type>Long</type>
+            </org.drools.workbench.models.datamodel.rule.ActionFieldValue>
+          </fieldValues>
+          <variable>data</variable>
+        </org.drools.workbench.models.datamodel.rule.ActionSetField>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>nikeplayingfield : Data_npd_attr_52</header>
+          <varName>data_npd_attr_52</varName>
+          <fieldType>Long</fieldType>
+          <factType>data</factType>
+          <factField>data_npd_attr_52</factField>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLActionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLActionColumn>
+  </actionCols>
+  <imports>
+    <imports/>
+  </imports>
+  <packageName>com.tsp_cns_mon.pub_tsp_cns_all_bre_data_rule_publish</packageName>
+  <tableFormat>EXTENDED_ENTRY</tableFormat>
+  <hitPolicy>NONE</hitPolicy>
+  <data>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">0</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_19_Nike Playing fields_case_1</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">156</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_19</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297005338 , 1297005336 , 1297005335 , 1297005334 , 1297005333 , 1297005332 , 1297005331 , 1297005330 , 1297005329 , 1297000155 , 1297000161 , 1297000160 , 1297003131 , 1297005341 , 1297003223 , 1297000157 , 1297000159 , 1297000158 , 1297000153 , 1297000154 , 1297000152</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003227</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+    <list>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">1</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>Rule_19_Nike Playing fields_case_2</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueNumeric class="int">155</valueNumeric>
+        <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>execute_rule_19</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297005337 , 1297005339 , 1297005340</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+      <org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+        <valueString>1297003228</valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </org.drools.workbench.models.guided.dtable.shared.model.DTCellValue52>
+    </list>
+  </data>
+</org.drools.workbench.models.guided.dtable.shared.model.GuidedDecisionTable52>
