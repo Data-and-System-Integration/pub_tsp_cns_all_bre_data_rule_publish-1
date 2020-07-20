@@ -43,13 +43,20 @@
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
+          <typedDefaultValue>
+            <valueString></valueString>
+            <dataType>NUMERIC_INTEGER</dataType>
+            <isOtherwise>false</isOtherwise>
+          </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>100</width>
-          <header>DEFAULT_CASE</header>
-          <constraintValueType>5</constraintValueType>
-          <factField>DEFAULT_CASE</factField>
-          <operator>--- please choose ---</operator>
+          <header>data_ppmonth &gt;</header>
+          <constraintValueType>1</constraintValueType>
+          <factField>data_ppmonth</factField>
+          <fieldType>Integer</fieldType>
+          <operator>&gt;</operator>
           <parameters/>
+          <binding></binding>
         </condition-column52>
       </conditions>
       <window>
@@ -175,8 +182,9 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>true</valueString>
-        <dataType>STRING</dataType>
+        <valueNumeric class="int">0</valueNumeric>
+        <valueString></valueString>
+        <dataType>NUMERIC_INTEGER</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
